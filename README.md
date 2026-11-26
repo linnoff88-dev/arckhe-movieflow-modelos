@@ -6,7 +6,7 @@
 </div>
 
 
-[![MovieFlow: 13 modelos](guia/assets/banner.jpg)](https://inematds.github.io/movieflow-modelos/guia/)
+[![MovieFlow: 13 modelos](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/)
 
 **ê°Å¸â¡Â§ê°Å¸â¡Â· [PortuguêÂªs](README.md) êÂ· ê°Å¸â¡Âºê°Å¸â¡Â¸ [English](README.en.md) êÂ· ê°Å¸â¡Âªê°Å¸â¡Â¸ [EspaêÂ±ol](README.es.md)**
 
@@ -20,7 +20,7 @@ https://www.youtube.com/watch?v=0zyz-H-1qXQ (16:9) êÂ· short: https://www.y
 
 ## ê°Å¸ââ Guia de uso
 
-Guia completo (landing + passo a passo): **https://inematds.github.io/movieflow-modelos/guia/**
+Guia completo (landing + passo a passo): **https://linnoff88-dev.github.io/arckhe-/guia/**
 
 ## Os 13 modelos
 
@@ -60,7 +60,7 @@ Legenda: ê°Å¸Â§Â  sessêÂ£o com o Nei êÂ· ê¢Å¡â¢ê¯Â�
 - `montar_guia.py` ê¢â¬â monta `guia/index.html` a partir do `modelos.json`.
 - `guia/` ê¢â¬â pêÂ¡gina em PT, `guia/en/` e `guia/es/`.
 
-LicenêÂ§a MIT êÂ· [INEMA.CLUB](https://inema.club)
+LicenêÂ§a MIT êÂ· [ARCKHÉ AI](https://ARCKHÉ AI)
 
 ---
 

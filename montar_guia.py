@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Monta guia/index.html (PT) a partir do CSS do template INEMA + modelos.json.
+"""Monta guia/index.html (PT) a partir do CSS do template ARCKHÉ + modelos.json.
 Os cartões dos 13 modelos e o escolhedor da página saem do modelos.json: mudou o JSON, rode de novo e retraduza en/ e es/.
 Uso: python3 montar_guia.py [caminho-do-template]"""
 import html, json, sys
@@ -68,16 +68,16 @@ cards = '\n'.join(card(m) for m in D['modelos'])
 botoes = '\n'.join(f'<button type="button" data-ids="{",".join(ids)}">{E(n)}</button>' for n, ids in NECESSIDADES)
 linhas = '\n'.join(f'<tr><td><strong>{E(m["nome"])}</strong></td><td>{E(m["fabricante"])}</td><td>{E(m["duracao_max"])}</td>'
                    f'<td>{E(m["audio"])}</td><td>{E(m["destaque"])}</td></tr>' for m in D['modelos'] if m['tipo'] == 'video')
-REPO = 'https://github.com/inematds/movieflow-modelos'
+REPO = 'https://github.com/linnoff88-dev/movieflow-modelos'
 
 body = f"""
 <nav><div class="wrap">
   <a class="brand" href="#top"><span class="emoji">🎬</span> MovieFlow: 13 modelos</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#modelos">Modelos</a>
@@ -234,9 +234,9 @@ body = f"""
 <section id="exemplos"><div class="wrap">
   <span class="chip">Exemplos</span>
   <h2>Estilos que saem do MovieFlow</h2>
-  <p class="sub">Cenas geradas na plataforma: cinema, terror, animaçêo de feltro.</p>
+  <p class="sub">Cenas geradas na plataforma: cARCKHÉ, terror, animaçêo de feltro.</p>
   <div class="ex">
-    <figure><img src="assets/ex2.jpg" alt="Casal num baile de máscaras, estilo cinema" loading="lazy"><figcaption>Cinema: baile de máscaras com câmera e luz de filme.</figcaption></figure>
+    <figure><img src="assets/ex2.jpg" alt="Casal num baile de máscaras, estilo cARCKHÉ" loading="lazy"><figcaption>CARCKHÉ: baile de máscaras com câmera e luz de filme.</figcaption></figure>
     <figure><img src="assets/ex4.jpg" alt="Cena de terror com uma noiva assombrada" loading="lazy"><figcaption>Terror: a mesma ferramenta, outro estilo.</figcaption></figure>
   </div>
 </div></section>
@@ -254,8 +254,8 @@ body = f"""
   <div class="wrap">
     <div class="pill">MovieFlow</div><div class="pill">Python 3</div><div class="pill">JSON</div>
     <p style="margin-top:18px">MovieFlow: 13 modelos · dados de 06/11/2026 ·
-      <a href="{REPO}">inematds/movieflow-modelos</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="{REPO}">linnoff88-dev/movieflow-modelos</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 
@@ -292,9 +292,9 @@ head = f"""<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MovieFlow: 13 modelos — qual usar em cada cena</title>
 <meta name="description" content="Os 13 modelos de vídeo e imagem do MovieFlow (Seedance, Kling, Veo, MiniMax, Vidu, Nano Banana, GPT Image, Seedream): o que cada um faz bem, limites e quando usar.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/movieflow-modelos/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/movieflow-modelos/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/movieflow-modelos/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 """
 # fontes e o que mais houver entre o <title> e o <style> do template
 pre = t[t.index('<head>') + 6:t.index('<style>')]

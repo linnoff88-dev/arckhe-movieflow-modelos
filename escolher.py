@@ -31,7 +31,7 @@ SINONIMOS = {
     'dialogo': ['dialogo'], 'conversa': ['conversa', 'dialogo'], 'fala': ['fala', 'labial'], 'falando': ['fala', 'labial'],
     'entrevista': ['fala', 'realista'], 'labial': ['labial'], 'dublagem': ['labial'],
     'anime': ['anime'], 'desenho': ['desenho', 'animacao'], 'animacao': ['animacao'], 'cartoon': ['desenho'],
-    'realista': ['realista'], 'real': ['real'], 'cinema': ['realista'], 'comercial': ['comercial'], 'propaganda': ['comercial'],
+    'realista': ['realista'], 'real': ['real'], 'cARCKHÉ': ['realista'], 'comercial': ['comercial'], 'propaganda': ['comercial'],
     'ambiente': ['ambiente'], 'camera': ['camera'], 'estilo': ['estilo'],
     'texto': ['texto'], 'letreiro': ['texto'], 'cartaz': ['cartaz', 'texto'], 'capa': ['capa'], 'poster': ['cartaz'],
     'diagrama': ['diagrama'], 'infografico': ['diagrama', 'texto'], 'hq': ['hq', 'painel'], 'quadrinho': ['hq'],

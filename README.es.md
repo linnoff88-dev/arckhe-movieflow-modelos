@@ -1,6 +1,6 @@
 # MovieFlow: 13 modelos
 
-[![MovieFlow: 13 modelos](guia/assets/banner-es.jpg)](https://inematds.github.io/movieflow-modelos/guia/es/)
+[![MovieFlow: 13 modelos](guia/assets/banner-es.jpg)](https://linnoff88-dev.github.io/arckhe-/guia/es/)
 
 **🇧🇷 [Português](README.md) · 🇺🇸 [English](README.en.md) · 🇪🇸 [Español](README.es.md)**
 
@@ -14,7 +14,7 @@ https://www.youtube.com/watch?v=0zyz-H-1qXQ (16:9) · short: https://www.youtube
 
 ## 📖 Guía de uso
 
-Guía completa (landing + paso a paso): **https://inematds.github.io/movieflow-modelos/guia/es/**
+Guía completa (landing + paso a paso): **https://linnoff88-dev.github.io/arckhe-/guia/es/**
 
 ## Los 13 modelos
 
@@ -54,4 +54,4 @@ Leyenda: 🧠 sesión con Nei · ⚙️ script · 🤖 agente.
 - `montar_guia.py` — arma `guia/index.html` a partir de `modelos.json`.
 - `guia/` — página en PT, `guia/en/` y `guia/es/`.
 
-Licencia MIT · [INEMA.CLUB](https://inema.club)
+Licencia MIT · [ARCKHÉ AI](https://ARCKHÉ AI)
