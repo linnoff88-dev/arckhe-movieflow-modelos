@@ -38,7 +38,7 @@ Fuentes y límites de cada uno en `modelos.json` (datos del 06/11/2026; "no coin
 
 ## El proceso, de principio a fin
 
-1. 🧠 **Elegir el modelo de la escena** — `python3 escolher.py "descrição da cena"` (o los botones de la guía; la herramienta entiende palabras clave en portugués).
+1. 🧠 **Elegir el modelo de la escena** — `python3 escolher.py "descriçêo da cena"` (o los botones de la guía; la herramienta entiende palabras clave en portugués).
 2. 🧠 **Ver la ficha** — `python3 escolher.py --modelo kling-3.0` / `--lista --tipo video`.
 3. 🧠 **Crear en MovieFlow** — movieflow.ai → Agent V2 → idea, idioma, duración, formato → Create; borrador en el modelo barato, escena final en el indicado.
 4. 🧠 **Actualizar los datos** cuando cambie la lista de MovieFlow — editar `modelos.json`.

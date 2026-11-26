@@ -38,7 +38,7 @@ Sources and limits for each model are in `modelos.json` (data from 06/11/2026; �
 
 ## The process, start to finish
 
-1. 🧠 **Choose the scene model** — `python3 escolher.py "descrição da cena"` (the tool understands Portuguese keywords) (or use the guide buttons).
+1. 🧠 **Choose the scene model** — `python3 escolher.py "descriçêo da cena"` (the tool understands Portuguese keywords) (or use the guide buttons).
 2. 🧠 **View the model details** — `python3 escolher.py --modelo kling-3.0` / `--lista --tipo video`.
 3. 🧠 **Create in MovieFlow** — movieflow.ai → Agent V2 → idea, language, duration, format → Create; draft with the low-cost model, final scene with the recommended one.
 4. 🧠 **Update the data** when MovieFlow’s list changes — edit `modelos.json`.

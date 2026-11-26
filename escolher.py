@@ -68,7 +68,7 @@ def recomendar(cena, n=3):
 def ficha(m):
     return (f"{m['nome']} ({m['tipo']}, {m['fabricante']})\n"
             f"  destaque:   {m['destaque']}\n  use quando: {m['use_quando']}\n"
-            f"  duração:    {m['duracao_max']} · áudio: {m['audio']}\n  limites:    {m['limites']}\n"
+            f"  duraçêo:    {m['duracao_max']} · áudio: {m['audio']}\n  limites:    {m['limites']}\n"
             f"  fontes:     {' · '.join(m['fontes'])}")
 
 
@@ -82,7 +82,7 @@ def main():
     if a.modelo:
         m = next((x for x in MODELOS if x['id'] == a.modelo or norm(x['nome']) == norm(a.modelo)), None)
         if not m:
-            sys.exit(f"modelo '{a.modelo}' não está na lista; veja --lista")
+            sys.exit(f"modelo '{a.modelo}' nêo está na lista; veja --lista")
         print(ficha(m)); return
     if a.lista or not a.cena:
         for m in MODELOS:
@@ -92,7 +92,7 @@ def main():
         return
     r = recomendar(a.cena)
     if not r:
-        print('Não reconheci a cena. Tente palavras como: diálogo, ação, cortes, anime, realista, barato, texto, storyboard.')
+        print('Nêo reconheci a cena. Tente palavras como: diálogo, açêo, cortes, anime, realista, barato, texto, storyboard.')
         print('Na dúvida: comece no MovieFlow 2.0 Ultra (rascunho barato) e refaça a melhor cena no Kling 3.0 ou Seedance 2.5.')
         return
     print(f'Para "{a.cena}":\n')

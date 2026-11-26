@@ -41,7 +41,7 @@ EXTRA = """
 NECESSIDADES = [
     ('Rascunho barato', ['movieflow-2.0-ultra', 'seedance-fast', 'nano-banana-2']),
     ('Diálogo com lábios', ['veo-3', 'kling-3.0', 'vidu-q3-pro']),
-    ('Ação com cortes', ['kling-3.0', 'kling-2.6']),
+    ('Açêo com cortes', ['kling-3.0', 'kling-2.6']),
     ('Plano longo com som', ['seedance-2.5']),
     ('Mesmo personagem', ['seedance-2.0', 'seedance-2.5', 'minimax-h3']),
     ('Anime / desenho', ['vidu-q3-pro']),
@@ -55,7 +55,7 @@ NECESSIDADES = [
 
 def card(m):
     fontes = ' · '.join(f'<a href="{E(u)}" target="_blank" rel="noopener">fonte {i}</a>' for i, u in enumerate(m['fontes'], 1))
-    meta = f"Duração máx.: {E(m['duracao_max'])} · Áudio: {E(m['audio'])}" if m['tipo'] == 'video' else 'Imagem'
+    meta = f"Duraçêo máx.: {E(m['duracao_max'])} · Áudio: {E(m['audio'])}" if m['tipo'] == 'video' else 'Imagem'
     return (f'<div class="mod" data-id="{m["id"]}"><span class="tp">{"VÍDEO" if m["tipo"] == "video" else "IMAGEM"}</span>'
             f'<h3>{E(m["nome"])}</h3><span class="fab">{E(m["fabricante"])}</span>'
             f'<p class="q"><strong>Use quando</strong> {E(m["use_quando"])}.</p>'
@@ -115,13 +115,13 @@ body = f"""
 
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
-  <h2>Uma central de modelos, não um modelo só</h2>
+  <h2>Uma central de modelos, nêo um modelo só</h2>
   <p class="sub">Em 2025 o MovieFlow era vendido como "filme grátis de até 10 minutos". Hoje ele cobra por créditos e virou um painel onde você escolhe o motor de cada cena.</p>
   <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="Os modelos principais do MovieFlow: Seedance 2.5, Kling 3.0, Veo 3, MiniMax H3, Nano Banana e GPT Image 2" loading="lazy" style="width:100%;display:block"></figure>
   <div class="grid g3">
     <div class="card"><h3>🎬 9 modelos de vídeo</h3><p>Seedance 2.5, 2.0 e Fast, Kling 3.0 e 2.6, MiniMax H3, Vidu Q3 Pro, Veo 3 e o próprio MovieFlow 2.0 Ultra.</p></div>
     <div class="card"><h3>🖼️ 4 modelos de imagem</h3><p>Nano Banana Pro e 2, GPT Image 2 e Seedream 5.0, para personagens, quadros-chave, cartazes e storyboard.</p></div>
-    <div class="card"><h3>🧭 Quando usar cada um</h3><p>Uma linha "use quando" por modelo, os limites e as fontes. Onde as fontes não batem, a página avisa.</p></div>
+    <div class="card"><h3>🧭 Quando usar cada um</h3><p>Uma linha "use quando" por modelo, os limites e as fontes. Onde as fontes nêo batem, a página avisa.</p></div>
   </div>
 </div></section>
 
@@ -138,7 +138,7 @@ body = f"""
 <section id="modelos"><div class="wrap">
   <span class="chip">Os 13 modelos</span>
   <h2>O que cada modelo faz bem</h2>
-  <p class="sub">Dados de páginas públicas lidas em 06/11/2026. "diverge" = as fontes não batem; "não confirmado" = não achei fonte.</p>
+  <p class="sub">Dados de páginas públicas lidas em 06/11/2026. "diverge" = as fontes nêo batem; "nêo confirmado" = nêo achei fonte.</p>
   <div class="mods" id="mods">
 {cards}
   </div>
@@ -150,14 +150,14 @@ body = f"""
     <div><strong>Quadro-chave</strong> — a imagem principal que define como o personagem ou a cena vai ficar.</div>
     <div><strong>Storyboard</strong> — a sequência de desenhos das cenas antes do filme.</div>
     <div><strong>Referência</strong> — foto, vídeo ou áudio que você envia para o modelo copiar rosto, estilo ou movimento.</div>
-    <div><strong>720p, 1080p, 2K, 4K</strong> — resolução: quanto maior, mais nítido (e em geral mais caro).</div>
+    <div><strong>720p, 1080p, 2K, 4K</strong> — resoluçêo: quanto maior, mais nítido (e em geral mais caro).</div>
     <div><strong>Motion Control</strong> — o modelo copia o movimento de um vídeo seu (dança, gesto).</div>
     <div><strong>Agent V2</strong> — o modo do MovieFlow em que a IA monta o filme inteiro a partir da sua ideia.</div>
   </div>
   <h3 style="margin-top:30px">Vídeo lado a lado</h3>
   <p class="sub" style="font-size:.85rem">No celular, arraste a tabela para o lado para ver todas as colunas.</p>
   <div class="scroll"><table class="tbl">
-    <tr><th>Modelo</th><th>Fabricante</th><th>Duração máx.</th><th>Áudio</th><th>Destaque</th></tr>
+    <tr><th>Modelo</th><th>Fabricante</th><th>Duraçêo máx.</th><th>Áudio</th><th>Destaque</th></tr>
 {linhas}
   </table></div>
 </div></section>
@@ -175,15 +175,15 @@ body = f"""
     <span>Ajuste de um detalhe (MiniMax H3)</span>
   </div>
   <div class="ex" style="margin-top:22px">
-    <figure><img src="assets/ex3.jpg" alt="Tela de criação do MovieFlow com a caixa da ideia" loading="lazy"><figcaption>Você escreve a ideia, escolhe idioma, duração e formato, e clica em criar.</figcaption></figure>
-    <figure><img src="assets/ex1.jpg" alt="Cena de animação com um texugo e uma raposa de feltro" loading="lazy"><figcaption>Uma história infantil feita do zero a partir de uma frase.</figcaption></figure>
+    <figure><img src="assets/ex3.jpg" alt="Tela de criaçêo do MovieFlow com a caixa da ideia" loading="lazy"><figcaption>Você escreve a ideia, escolhe idioma, duraçêo e formato, e clica em criar.</figcaption></figure>
+    <figure><img src="assets/ex1.jpg" alt="Cena de animaçêo com um texugo e uma raposa de feltro" loading="lazy"><figcaption>Uma história infantil feita do zero a partir de uma frase.</figcaption></figure>
   </div>
 </div></section>
 
 <section id="guia"><div class="wrap">
   <span class="chip">Guia de uso · passo a passo</span>
   <h2>Use o guia e o escolhedor</h2>
-  <p class="sub">O jeito mais fácil é usar os botões de <a href="#escolher">Qual usar</a> nesta página, sem instalar nada. Para o escolhedor no terminal: Python 3 (no Windows o comando é <code>python</code> em vez de <code>python3</code>) e o git — ou baixe o ZIP no GitHub (botão Code → Download ZIP). Roda na sua máquina, sem conta e sem chave.</p>
+  <p class="sub">O jeito mais fácil é usar os botões de <a href="#escolher">Qual usar</a> nesta página, sem instalar nada. Para o escolhedor no terminal: Python 3 (no Windows o comando é <code>python</code> em vez de <code>python3</code>) e o git — ou baixe o ZIP no GitHub (botêo Code → Download ZIP). Roda na sua máquina, sem conta e sem chave.</p>
 
   <div class="step"><div class="b">1</div><div>
     <h3>Baixe o projeto</h3>
@@ -209,7 +209,7 @@ body = f"""
   <div class="step"><div class="b">4</div><div>
     <h3>No MovieFlow, troque o modelo por cena</h3>
     <p>Crie a conta em movieflow.ai (vem com créditos de teste), faça o rascunho no modelo barato e refaça só as cenas importantes no modelo indicado. Personagem que aparece em várias cenas: crie a imagem dele primeiro e use como referência.</p>
-<pre><span class="s">https://movieflow.ai</span>  <span class="c"># Agent V2 → ideia → idioma, duração, formato → Create</span></pre>
+<pre><span class="s">https://movieflow.ai</span>  <span class="c"># Agent V2 → ideia → idioma, duraçêo, formato → Create</span></pre>
   </div></div>
 
   <div class="step"><div class="b">5</div><div>
@@ -221,10 +221,10 @@ body = f"""
 
 <section id="preco"><div class="wrap">
   <span class="chip">Quanto custa</span>
-  <h2>Grátis e ilimitado não é mais</h2>
-  <p class="sub">O que dá para afirmar hoje, e o que ainda não.</p>
+  <h2>Grátis e ilimitado nêo é mais</h2>
+  <p class="sub">O que dá para afirmar hoje, e o que ainda nêo.</p>
   <div class="grid g3">
-    <div class="card"><h3>🎟️ Créditos no cadastro</h3><p>A conta nova ganha créditos para testar (100 créditos, segundo um diretório de preços de nov/2026). É teste, não uso ilimitado.</p></div>
+    <div class="card"><h3>🎟️ Créditos no cadastro</h3><p>A conta nova ganha créditos para testar (100 créditos, segundo um diretório de preços de nov/2026). É teste, nêo uso ilimitado.</p></div>
     <div class="card"><h3>⚡ US$ 0,008 por segundo</h3><p>Preço anunciado no próprio site para o MovieFlow 2.0: 5 segundos de vídeo por cerca de 4 centavos de dólar.</p></div>
     <div class="card"><h3>📅 Plano Standard</h3><p>US$ 19 por mês com 1.800 créditos, download 1080p sem marca-d'água (diretório Kingy, nov/2026). Os créditos zeram a cada 31 dias.</p></div>
   </div>
@@ -234,7 +234,7 @@ body = f"""
 <section id="exemplos"><div class="wrap">
   <span class="chip">Exemplos</span>
   <h2>Estilos que saem do MovieFlow</h2>
-  <p class="sub">Cenas geradas na plataforma: cinema, terror, animação de feltro.</p>
+  <p class="sub">Cenas geradas na plataforma: cinema, terror, animaçêo de feltro.</p>
   <div class="ex">
     <figure><img src="assets/ex2.jpg" alt="Casal num baile de máscaras, estilo cinema" loading="lazy"><figcaption>Cinema: baile de máscaras com câmera e luz de filme.</figcaption></figure>
     <figure><img src="assets/ex4.jpg" alt="Cena de terror com uma noiva assombrada" loading="lazy"><figcaption>Terror: a mesma ferramenta, outro estilo.</figcaption></figure>
